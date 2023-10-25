@@ -328,16 +328,79 @@
                         </a></li>
                 </ul>
             </div>
-            <form>
-                <label>
-                    Subscribe
-                    <input class="form-input" type="text" name="email_address" placeholder="E-mail" />
-                </label>
-                <button type="submit">Subscribe</button>
-            </form>
+            <div class="footer-form">
+                <p class="subscribe-text">Subscribe</p>
+                <form class="form-container">
+                    <label class="form-label">
+                        <input type="email" name="email_address" placeholder="E-mail" class="form-input" />
+                    </label>
+                    <button type="submit" class="form-button">
+                        <svg width="24" height="24" class="svg-icon">
+                            <use href="./images/your_icon.svg#yourIconID"></use>
+                        </svg>
+                        Subscribe
+                    </button>
+                </form>
+            </div>
             </div>
     
     </footer>
+
+    <div class="backdrop is-open">
+        <div class="modal">
+            <button type="button" class="modal-btn">
+                <svg class="modal-btn-icon" width="8" height="8">
+                    <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
+                </svg>
+            </button>
+            <p class="modal-title">Leave your contacts and we will call you back</p>
+            <form class="modal-form">
+                <div class="modal-field">
+                    <label for="user-name" class="modal-lable">Name</label>
+                    <div class="modal-input-wrap">
+                        <input type="text" name="user-name" class="modal-input" required="" id="user-name">
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-person-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-phone" class="modal-lable">Phone</label>
+                    <div class="modal-input-wrap">
+                        <input type="tel" name="user-phone" class="modal-input" required="" id="user-phone">
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-phone-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field">
+                    <label for="user-email" class="modal-lable">Email</label>
+                    <div class="modal-input-wrap">
+                        <input type="email" name="user-email" class="modal-input" required="" id="user-email">
+                        <svg class="modal-icon" width="18" height="24">
+                            <use href="./images/icons.svg#icon-email-black-18dp-1"></use>
+                        </svg>
+                    </div>
+                </div>
+                <div class="modal-field-comment">
+                    <label for="user-comment" class="modal-lable">Comment</label>
+                    <textarea name="user-comment" id="user-comment" class="modal-text" placeholder="Text input"></textarea>
+                </div>
+                <div class="modal-field-cbox">
+                    <input type="checkbox" name="user-privacy" class="check-input visually-hidden" required=""
+                        id="user-privacy" value="true">
+                    <label for="user-privacy" class="check-text">
+                        <span class="policy-text"><svg class="property-v-check" width="10" height="8">
+                                <use href="./images/icons.svg#icon-Property-1click"></use>
+                            </svg>
+                        </span>
+                        I accept the terms and conditions of the
+                        <a class="pp-text" href="">Privacy Policy</a></label>
+                </div>
+                <button type="button" class="backdrop-sup-btn">Send</button>
+            </form>
+        </div>
+    </div>
     </body>
 
 </html>
