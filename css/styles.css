@@ -813,6 +813,10 @@ label {
     fill: #4D5AE5;
 }
 
+.modal-input:focus+.modal-icon path {
+    fill: #4D5AE5;
+}
+
 .modal-text {
     width: 100%;
     height: 120px;
